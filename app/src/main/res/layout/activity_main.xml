@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="Your Height"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering height with hint in cm -->
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="centimeters"
+        android:layout_marginTop="-33dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="(centimeters)"
+        android:layout_gravity="center"/>
+
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Your weight"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering weight with hint in kgs -->
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:hint="kilogram"
+        android:layout_gravity="center"
+        android:layout_marginTop="-33dp"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+        android:inputType="numberDecimal"
+        >
+
+    </EditText>
+
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="(kilogram)"
+        android:layout_gravity="center"/>
+
+
+
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+    <Button
+        android:id="@+id/ib1"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:nextFocusRight="@color/colorPrimary"
+        android:text="Compute Bmi"
+        android:visibility="visible" />
+
+    <!-- Text view for showing result -->
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+</LinearLayout>
